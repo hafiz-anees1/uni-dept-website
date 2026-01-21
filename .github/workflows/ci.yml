@@ -1,0 +1,13 @@
+name: CI Pipeline
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Lint HTML
+        run: npm run test:html
+      - name: Build Docker Image (Test)
+        run: docker build . -t test-image
