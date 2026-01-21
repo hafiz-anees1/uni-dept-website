@@ -1,4 +1,4 @@
-name: Deploy to Development
+name: Dev Pipeline by Farhan
 on:
   push:
     branches: ['develop']
