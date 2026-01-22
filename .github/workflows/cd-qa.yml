@@ -1,4 +1,4 @@
-name: Deploy to QA
+name: QA Pipeline by Abdul Rahman
 on:
   push:
     branches: ['release']
