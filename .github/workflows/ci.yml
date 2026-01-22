@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI Test Pipeline by Mujeeb
 on: [push, pull_request]
 jobs:
   test:
